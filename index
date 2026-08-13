@@ -56,65 +56,96 @@
 
         .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Header */
+        /* Header & Navigation */
         header {
             background-color: var(--white);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            padding: 20px 0;
-            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .brand-logo {
+            display: flex;
+            flex-direction: column;
         }
 
         .brand-name {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--primary-navy);
             font-family: 'Merriweather', serif;
         }
 
         .brand-title {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
             font-weight: 500;
             letter-spacing: 0.5px;
-            margin-top: 4px;
         }
 
-        /* Main Content Section */
-        .main-section {
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-dark) 100%);
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        /* Action Section */
+        .action-section {
             padding: 80px 0;
             background-color: var(--bg-light);
             text-align: center;
-            min-height: calc(100vh - 280px);
-            display: flex;
-            align-items: center;
         }
 
-        .content-card {
+        .action-card {
             background: var(--white);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 60px 40px;
+            padding: 50px 30px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
-            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .content-card h1 {
-            font-size: 2.25rem;
-            margin-bottom: 20px;
+        .action-card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 15px;
             color: var(--primary-navy);
         }
 
-        .content-card p {
-            font-size: 1.15rem;
+        .action-card p {
             color: var(--text-muted);
-            max-width: 700px;
-            margin: 0 auto 40px auto;
-            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 35px;
         }
 
         .button-group {
@@ -159,9 +190,21 @@
         footer {
             background-color: var(--primary-navy-dark);
             color: #cbd5e1;
-            padding: 30px 0;
+            padding: 40px 0;
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 15px;
+        }
+
+        .footer-badge-container img {
+            max-height: 45px;
+            width: auto;
+            background-color: #ffffff;
+            padding: 4px;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -169,18 +212,28 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="brand-name">Brad Figler MD FACS</div>
-            <div class="brand-title">Genitourinary Reconstructive Surgery</div>
+        <div class="container navbar">
+            <div class="brand-logo">
+                <span class="brand-name">Brad Figler MD FACS</span>
+                <span class="brand-title">Genitourinary Reconstructive Surgery</span>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Section -->
-    <section class="main-section">
+    <!-- Hero Banner -->
+    <section class="hero">
         <div class="container">
-            <div class="content-card">
-                <h1>Graft-Only Vaginoplasty</h1>
-                <p>Graft only vaginoplasty is an innovative minimally invasive approach to gender affirming vaginoplasty.</p>
+            <h1>Graft-Only Vaginoplasty</h1>
+            <p>Graft only vaginoplasty is an innovative minimally invasive approach to gender affirming vaginoplasty.</p>
+        </div>
+    </section>
+
+    <!-- Action Section -->
+    <section class="action-section">
+        <div class="container">
+            <div class="action-card">
+                <h2>Patient Education & Direct Contact</h2>
+                <p>Watch the detailed educational overview video or reach out to our team directly with any inquiries.</p>
                 
                 <div class="button-group">
                     <a href="https://vimeo.com/1171609774?share=copy&fl=sv&fe=ci" target="_blank" rel="noopener" class="btn btn-primary">
@@ -194,10 +247,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Professional Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 Brad Figler MD FACS. All rights reserved.</p>
+            <div class="footer-badge-container">
+                <a href="https://www.castleconnolly.com/top-doctors/bradley-d-figler-urology-128cc226020" target="_blank" rel="noopener">
+                    <img src="castle-connolly-logo.png" alt="Castle Connolly Top Doctors">
+                </a>
+            </div>
         </div>
     </footer>
 
