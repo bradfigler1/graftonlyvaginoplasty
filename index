@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graft-Only Vaginoplasty — Brad Figler MD FACS</title>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-navy: #13294B;
+            --primary-navy-dark: #0a182f;
+            --carolina-blue: #4B9CD3;
+            --carolina-blue-hover: #3582b5;
+            --text-dark: #2c3e50;
+            --text-muted: #556575;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif, Georgia, serif;
+            color: var(--primary-navy);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--carolina-blue);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-navy);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            font-family: 'Merriweather', serif;
+        }
+
+        .brand-title {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+
+        /* Main Content Section */
+        .main-section {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+            text-align: center;
+            min-height: calc(100vh - 280px);
+            display: flex;
+            align-items: center;
+        }
+
+        .content-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 60px 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            width: 100%;
+        }
+
+        .content-card h1 {
+            font-size: 2.25rem;
+            margin-bottom: 20px;
+            color: var(--primary-navy);
+        }
+
+        .content-card p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            line-height: 1.8;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--carolina-blue);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-navy);
+            color: var(--white);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-navy);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--carolina-blue);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-navy-dark);
+            color: #cbd5e1;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="brand-name">Brad Figler MD FACS</div>
+            <div class="brand-title">Genitourinary Reconstructive Surgery</div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-section">
+        <div class="container">
+            <div class="content-card">
+                <h1>Graft-Only Vaginoplasty</h1>
+                <p>Graft only vaginoplasty is an innovative minimally invasive approach to gender affirming vaginoplasty.</p>
+                
+                <div class="button-group">
+                    <a href="https://vimeo.com/1171609774?share=copy&fl=sv&fe=ci" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i> Watch Patient Education Video
+                    </a>
+                    <a href="mailto:bradfiglermd@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Brad Figler MD FACS. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
